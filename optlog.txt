@@ -1,0 +1,118 @@
+
+P0 =
+
+   16.0000
+  400.0000
+  600.0000
+  300.0000
+    0.5000
+
+
+options = 
+
+  fmincon options:
+
+   Options used by current Algorithm ('active-set'):
+   (Other available algorithms: 'interior-point', 'sqp', 'sqp-legacy', 'trust-region-reflective')
+
+   Set properties:
+                    Algorithm: 'active-set'
+                      Display: 'iter'
+         FiniteDifferenceType: 'central'
+                  UseParallel: 1
+
+   Default properties:
+               CheckGradients: 0
+          ConstraintTolerance: 1.0000e-06
+     FiniteDifferenceStepSize: 'eps^(1/3)'
+            FunctionTolerance: 1.0000e-06
+       MaxFunctionEvaluations: '100*numberOfVariables'
+                MaxIterations: 400
+          OptimalityTolerance: 1.0000e-06
+                    OutputFcn: []
+                      PlotFcn: []
+    SpecifyConstraintGradient: 0
+     SpecifyObjectiveGradient: 0
+                StepTolerance: 1.0000e-06
+                     TypicalX: 'ones(numberOfVariables,1)'
+
+   Options not used by current Algorithm ('active-set')
+   Default properties:
+    HessianApproximation: 'not applicable'
+              HessianFcn: []
+      HessianMultiplyFcn: []
+             HonorBounds: 1
+          ObjectiveLimit: -1.0000e+20
+            ScaleProblem: 0
+     SubproblemAlgorithm: 'cg'
+
+
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+
+ans = 
+
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 12
+              Cluster: local
+        AttachedFiles: {}
+          IdleTimeout: Inf (no automatic shut down)
+          SpmdEnabled: true
+
+Entering 'binary'
+fatal: Unable to create '/home/jt/cobratoolbox/.git/modules/binary/index.lock': File exists.
+
+If no other git process is currently running, this probably means a
+git process crashed in this repository earlier. Make sure no other git
+process is running and remove the file manually to continue.
+Stopping at 'binary'; script returned non-zero status.
+Warning: The submodules could not be reset.
+> In initCobraToolbox (line 213)
+  In changeCobraSolver (line 217)
+  In fitnessFunction (line 3)
+  In parallel_function>@(P)fitnessFunction(P,dataLibrary)
+  In finDiffEvalAndChkErr
+  In parfinitedifferences>makeF%2/F%
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+/home/jt/cobratoolbox/binary/glnxa64/bin/minos//runfba solveLP qFBA lp1
+Warning: Your global git configuration could not be restored.
+> In initCobraToolbox (line 558)
+Warning: Your global git configuration could not be restored.
+> In initCobraToolbox (line 558)
+Warning: Your global git configuration could not be restored.
+> In initCobraToolbox (line 558)
+  In changeCobraSolver (line 217)
+  In fitnessFunction (line 3)
+  In parallel_function>@(P)fitnessFunction(P,dataLibrary)
+  In finDiffEvalAndChkErr
+  In parfinitedifferences>makeF%2/F%
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+  In changeCobraSolver (line 217)
+  In fitnessFunction (line 3)
+  In parallel_function>@(P)fitnessFunction(P,dataLibrary)
+  In finDiffEvalAndChkErr
+  In parfinitedifferences>makeF%2/F%
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+-rw-rw-rw- 1 jt jt  176 Mar 27 12:07 qFBA.basis
+-rw-rw-rw- 1 jt jt 8722 Mar 27 12:07 qFBA.out
+  Running ./solveLP
+At line 73 of file ../src/solveLP.f90 (unit = 10, file = '�w"�')
+Fortran runtime error: File 'fort.10' does not exist
+cp: cannot stat ‘fort.9’: No such file or directory
+rm: cannot remove ‘fort.4’: No such file or directory
+rm: cannot remove ‘fort.10’: No such file or directory
+
+Warning: Your global git configuration could not be restored.
+> In initCobraToolbox (line 558)
+  In changeCobraSolver (line 217)
+  In fitnessFunction (line 3)
+  In parallel_function>@(P)fitnessFunction(P,dataLibrary)
+  In finDiffEvalAndChkErr
+  In parfinitedifferences>makeF%2/F%
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+  In changeCobraSo

@@ -1,0 +1,78 @@
+
+P =
+
+    3.0000
+   10.0000
+  -20.0000
+   -2.9957
+   -2.9957
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('glpk', '/home/juan/cobratoolbox/external/base/solvers/glpkmex/glpk.m', 508)" style="font-weight:bold">glpk</a> (<a href="matlab: opentoline('/home/juan/cobratoolbox/external/base/solvers/glpkmex/glpk.m',508,0)">line 508</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solveCobraLP>solveGlpk', '/home/juan/cobratoolbox/src/base/solvers/solveCobraLP.m', 1740)" style="font-weight:bold">solveCobraLP>solveGlpk</a> (<a href="matlab: opentoline('/home/juan/cobratoolbox/src/base/solvers/solveCobraLP.m',1740,0)">line 1740</a>)
+[x,f,origStat,extra] = glpk(c,A,b,lb,ub,csense,[],osense,params);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solveCobraLP', '/home/juan/cobratoolbox/src/base/solvers/solveCobraLP.m', 500)" style="font-weight:bold">solveCobraLP</a> (<a href="matlab: opentoline('/home/juan/cobratoolbox/src/base/solvers/solveCobraLP.m',500,0)">line 500</a>)
+        [x, f, y, w, stat, origStat] = solveGlpk(c, A, b, lb, ub, csense, osense, param);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimizeCbModel', '/home/juan/cobratoolbox/src/analysis/FBA/optimizeCbModel.m', 347)" style="font-weight:bold">optimizeCbModel</a> (<a href="matlab: opentoline('/home/juan/cobratoolbox/src/analysis/FBA/optimizeCbModel.m',347,0)">line 347</a>)
+    solution = solveCobraLP(LPproblem);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('FBAcalc', '/home/juan/thesis/photoBioreactor_v11/calculation/FBAcalc.m', 93)" style="font-weight:bold">FBAcalc</a> (<a href="matlab: opentoline('/home/juan/thesis/photoBioreactor_v11/calculation/FBAcalc.m',93,0)">line 93</a>)
+                localFBA = optimizeCbModel(changeObjective(model,PBR.methods.objectiveFunctionStarch));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sFBA', '/home/juan/thesis/photoBioreactor_v11/calculation/sFBA.m', 62)" style="font-weight:bold">sFBA</a> (<a href="matlab: opentoline('/home/juan/thesis/photoBioreactor_v11/calculation/sFBA.m',62,0)">line 62</a>)
+    solution = FBAcalc(PBR,solution);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('regressionModel_adesanya_2014>evaluateModel', '/home/juan/thesis/photoBioreactor_v11/cases/adesanya_2014/regressionModel_adesanya_2014.m', 69)" style="font-weight:bold">regressionModel_adesanya_2014>evaluateModel</a> (<a href="matlab: opentoline('/home/juan/thesis/photoBioreactor_v11/cases/adesanya_2014/regressionModel_adesanya_2014.m',69,0)">line 69</a>)
+solution = sFBA(PBR,'printLevel',0);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('regressionModel_adesanya_2014>errorFunction', '/home/juan/thesis/photoBioreactor_v11/cases/adesanya_2014/regressionModel_adesanya_2014.m', 76)" style="font-weight:bold">regressionModel_adesanya_2014>errorFunction</a> (<a href="matlab: opentoline('/home/juan/thesis/photoBioreactor_v11/cases/adesanya_2014/regressionModel_adesanya_2014.m',76,0)">line 76</a>)
+[solution,data] = evaluateModel(P);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('regressionModel_adesanya_2014', '/home/juan/thesis/photoBioreactor_v11/cases/adesanya_2014/regressionModel_adesanya_2014.m', 17)" style="font-weight:bold">regressionModel_adesanya_2014</a> (<a href="matlab: opentoline('/home/juan/thesis/photoBioreactor_v11/cases/adesanya_2014/regressionModel_adesanya_2014.m',17,0)">line 17</a>)
+e1 = errorFunction(P0);
+} 
+edit FBAcalc.m
+edit nitrogenUptake.m
+edit sFBA.m
+mustBePositive(1)
+1>0
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+20*(1>2)
+
+ans =
+
+     0
+
+data_adesanya_2014
+starchConsumptionID
+
+starchConsumptionID =
+
+    27
+
+model.lb(27)
+{Undefined variable "model" or class "model.lb".
+} 
+modelLight.lb(27)
+
+ans =
+
+     0
+
+modelLight.ub(27)
+
+ans =
+
+     0
+
+solution.cellStarch(solution.count)
+{
